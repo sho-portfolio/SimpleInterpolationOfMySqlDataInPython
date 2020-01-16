@@ -215,16 +215,12 @@ def insertMultipleRecordDateDataToTable(X1, Y1):
       # print("MySQL connection is closed")
 
 
-
-
 dbResults  = getXYDatefromDatabase_healthData()
 X, Y, X1, Y1, X0 = interpolateDates(dbResults)
 print (X0, Y1)
 insertMultipleRecordDateDataToTable(X0, Y1)
 
-print(dbResults)
-
-exit() 
+print("__________________________________")
 
 dbResults = getXYIntfromDatabase()
 X, Y, X1, Y1 = interpolateInts(dbResults)
@@ -237,7 +233,6 @@ dbResults = getXYDatefromDatabase()
 X, Y, X1, Y1, X0 = interpolateDates(dbResults)
 print (X0, Y1)
 insertMultipleRecordDateDataToTable(X0, Y1)
-
 
 
 ```
